@@ -159,8 +159,10 @@ window.addEventListener("load", function(e) {
 
     function onLoadCartNumber(){
         let productNumber = localStorage.getItem("cartNumber");
-        if(cartNumber){
-            document.querySelector(".number").textContent = productNumber;
+        if(productNumber){
+            if(cartNumber){
+                document.querySelector(".number").textContent = productNumber;
+            }
         }
         else {
             document.querySelector(".number").textContent = 0;
