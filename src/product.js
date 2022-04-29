@@ -162,6 +162,9 @@ window.addEventListener("load", function(e) {
         if(cartNumber){
             document.querySelector(".number").textContent = productNumber;
         }
+        else {
+            document.querySelector(".number").textContent = 0;
+        }
     }
 
     function cartNumber(product){
